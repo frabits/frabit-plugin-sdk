@@ -6,3 +6,16 @@ This file is part of Frabit
 */
 
 package plugin
+
+type Plugin struct {
+	Name        string
+	Description string
+	License     string
+	Vendor      string
+}
+
+// Validate validate this plugin is a real plugin used with main application before install is
+func (p *Plugin) Validate() bool {
+
+	return true
+}
